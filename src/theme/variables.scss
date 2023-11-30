@@ -4,12 +4,31 @@
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #3880ff;
-  --ion-color-primary-rgb: 56, 128, 255;
-  --ion-color-primary-contrast: #ffffff;
-  --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #3171e0;
-  --ion-color-primary-tint: #4c8dff;
+	--ion-background-color: #000000;
+	--ion-background-color-rgb: 0,0,0;
+
+	--ion-text-color: #45fd12;
+	--ion-text-color-rgb: 69,253,18;
+
+	--ion-color-step-50: #030d01;
+	--ion-color-step-100: #071902;
+	--ion-color-step-150: #0a2603;
+	--ion-color-step-200: #0e3304;
+	--ion-color-step-250: #113f05;
+	--ion-color-step-300: #154c05;
+	--ion-color-step-350: #185906;
+	--ion-color-step-400: #1c6507;
+	--ion-color-step-450: #1f7208;
+	--ion-color-step-500: #237f09;
+	--ion-color-step-550: #268b0a;
+	--ion-color-step-600: #29980b;
+	--ion-color-step-650: #2da40c;
+	--ion-color-step-700: #30b10d;
+	--ion-color-step-750: #34be0e;
+	--ion-color-step-800: #37ca0e;
+	--ion-color-step-850: #3bd70f;
+	--ion-color-step-900: #3ee410;
+	--ion-color-step-950: #42f011;
 
   /** secondary **/
   --ion-color-secondary: #3dc2ff;
@@ -32,19 +51,19 @@
   --ion-color-success-rgb: 45, 211, 111;
   --ion-color-success-contrast: #ffffff;
   --ion-color-success-contrast-rgb: 255, 255, 255;
-  --ion-color-success-shade: #28ba62;
+  --ion-color-success-shade: #ffffff;
   --ion-color-success-tint: #42d77d;
 
   /** warning **/
-  --ion-color-warning: #ffc409;
+  --ion-color-warning: #000000;
   --ion-color-warning-rgb: 255, 196, 9;
-  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-contrast: #ffffff;
   --ion-color-warning-contrast-rgb: 0, 0, 0;
   --ion-color-warning-shade: #e0ac08;
   --ion-color-warning-tint: #ffca22;
 
   /** danger **/
-  --ion-color-danger: #eb445a;
+  --ion-color-danger: #1eff00;
   --ion-color-danger-rgb: 235, 68, 90;
   --ion-color-danger-contrast: #ffffff;
   --ion-color-danger-contrast-rgb: 255, 255, 255;
@@ -60,7 +79,7 @@
   --ion-color-dark-tint: #383a3e;
 
   /** medium **/
-  --ion-color-medium: #92949c;
+  --ion-color-medium: #383434;
   --ion-color-medium-rgb: 146, 148, 156;
   --ion-color-medium-contrast: #ffffff;
   --ion-color-medium-contrast-rgb: 255, 255, 255;
@@ -233,12 +252,4 @@
 
     --ion-card-background: #1e1e1e;
   }
-}
-
-html {
-  /* 
-   * For more information on dynamic font scaling, visit the documentation:
-   * https://ionicframework.com/docs/layout/dynamic-font-scaling
-   */
-  --ion-dynamic-font: var(--ion-default-dynamic-font);
 }

@@ -1,0 +1,75 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+   
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+     </ion-buttons>
+ 
+     <ion-title>Razer</ion-title>
+   </ion-toolbar>
+ </ion-header>
+ 
+ 
+ <ion-menu contentId="main-content">
+ <ion-content class="ion-padding">
+     <ion-avatar>
+      <img src="data:image/png;base64,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">
+     </ion-avatar>
+ 
+     <ion-list >
+       <ion-item >
+        <ion-icon name="logo-instagram"></ion-icon>
+         <ion-label routerLink="/inta-fake">Instagram</ion-label>
+       </ion-item>
+ 
+       <ion-item>
+        <ion-icon name="thermometer-outline"></ion-icon>
+         <ion-label routerLink="/temp">Temperatura</ion-label>
+       </ion-item>
+ 
+       <ion-item>
+        <ion-icon name="pencil-outline"></ion-icon>
+         <ion-label routerLink="/desenho">Desenho</ion-label>
+       </ion-item>
+ 
+       <ion-item>
+        <ion-icon name="map-outline"></ion-icon>
+         <ion-label routerLink="/mapa">Mapa</ion-label>
+       </ion-item>
+ 
+       <ion-item>
+        <ion-icon name="exit-outline"></ion-icon>
+         <ion-label routerLink="/home">Sair</ion-label>
+       </ion-item>
+     </ion-list>
+ 
+     <ion-footer>Razer</ion-footer>
+     
+ </ion-content>
+
+  
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>App Todo</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <p>Bem-vindo a pagina de Perfil do Usuário</p>
+
+      <ion-card>
+        <img alt="Silhouette of mountains" src="https://assets2.razerzone.com/images/pnx.assets/232bcbb761a77934a770a93a562e0208/razer-bundles-og.jpg" />
+        <ion-card-header>
+          <ion-card-title>Mouse Razer</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          O modelo Cobra Pro também se destaca por trazer o sensor óptico Focus Pro 30K com a tecnologia HyperSpeed, o que o torna capaz de trabalhar com taxas de polling que chegam a 4.000 Hz com ajuda do Razer Mouse Dock Pro (vendido separadamente). Ele se conecta através de um dongle Razer HyperSpeed Wireless, pesa 77 gramas e traz uma bateria que garante até 100 horas de jogo (ou 170 horas em Bluetooth).
+        </ion-card-content>
+      </ion-card>
+    </ion-content>
+</div>

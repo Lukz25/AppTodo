@@ -25,3 +25,62 @@
 #container a {
   text-decoration: none;
 }
+
+ion-content{
+text-align: center;
+--background: rgb(0,0,0);
+--background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(85,224,37,1) 50%, rgba(0,0,0,1) 100%);
+}
+
+ion-card{
+
+  box-sizing: border-box;
+  padding: 5%;
+  height: 45%;
+  z-index:1;
+  margin-top:35%;
+}
+
+ion-avatar{
+  position:absolute;
+  right: 36%;
+  z-index:2;
+  width: 30%;
+  height: 14%;
+  bottom:75%;
+
+}
+
+ion-input{
+  margin-bottom: 5%;
+}
+
+.cadastro{
+  margin-left:9%;
+  margin-top:15%;
+  text-align: left;
+}
+
+#entrar{
+  width:70%;
+}
+
+input{
+  width:83%;
+}
+
+#cadastre-se{
+  width:55%;
+}
+
+
+p{
+  color: white;
+}
+
+
+
+
+
+
+
