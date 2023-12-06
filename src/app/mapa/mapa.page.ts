@@ -31,13 +31,20 @@ export class MapaPage implements OnInit {
     console.log("longitude",long);
 
     this.mapa = Leaflet.map('mapId',{
-      center: [ -23.976715368288563, -46.31001914877629],
+      center: [ lat, long],
       zoom:18
     })
 
     Leaflet.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
       attribution:"Meu mapa"
     }).addTo(this.mapa)
+
+
+    const usuario = Leaflet.icon({
+      iconUrl: '../../assets/icon/marcador.png',
+      iconSize: [50,32],
+      popupAnchor: [0,-14]
+    })
 
     const praiamar = Leaflet.icon({
       iconUrl: '../../assets/icon/praiamar.png',
@@ -109,8 +116,8 @@ export class MapaPage implements OnInit {
     
   
 
-
-    
+   /*Usuário*/
+   Leaflet.marker({lat: lat, lng: long}, {icon: usuario}).addTo(this.mapa).bindPopup("Você está Aqui")
  
    /*Praiamar*/
    Leaflet.marker({lat: -23.976715368288563, lng: -46.31001914877629}, {icon: praiamar}).addTo(this.mapa).bindPopup("Praiamar Shopping - R. Alexandre Martins, 80 - Aparecida, Santos - SP, 11025-202")
